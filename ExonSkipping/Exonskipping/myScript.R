@@ -1,4 +1,4 @@
-png("C:/Users/mahim/GoBi/Blatt01/ExonSkippingJAR/src/plots_v2/R/skipped_exons.jpg", width = 1200, height = 548)
+png("C:/Users/GoBi/Blatt01/ExonSkippingJAR/src/plots_v2/R/skipped_exons.jpg", width = 1200, height = 548)
 plot(1, 1, type = "n", xlim=c(0,170),xaxp=c(0,170, 10),ylim=c(0,17424),yaxp=c(0,17500,7),ann=F,panel.first=grid())
 title(main="Empirical Cumulative Distribution Function",xlab="Max. number of Skipped Exons",ylab="Cumulative number of events")
 points(1,12091, col = "pink", pch=16   )
