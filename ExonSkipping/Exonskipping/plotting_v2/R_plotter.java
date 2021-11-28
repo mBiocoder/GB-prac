@@ -10,7 +10,7 @@ public class R_plotter implements Runnable {
         System.out.println("Main started.");
 
         //Add all files in output to ArrayList "outputs"
-        File path = new File("C:\\Users\\mahim\\GoBi\\Blatt01\\ExonSkippingJAR\\src\\plots_v2\\outputs");
+        File path = new File("C:\\Users\\GoBi\\Blatt01\\ExonSkippingJAR\\src\\plots_v2\\outputs");
         ArrayList<File> outputs = new ArrayList<>(Arrays.asList(Objects.requireNonNull(path.listFiles())));
         System.out.println(outputs);
 
@@ -44,7 +44,7 @@ public class R_plotter implements Runnable {
 
 
         // ---Create and execute R-Command---
-        String rCom = "png(\"C:/Users/mahim/GoBi/Blatt01/ExonSkippingJAR/src/plots_v2/R/skipped_exons.jpg\", width = 1200, height = 548)\n"
+        String rCom = "png(\"C:/Users/GoBi/Blatt01/ExonSkippingJAR/src/plots_v2/R/skipped_exons.jpg\", width = 1200, height = 548)\n"
                 + "plot(1, 1, type = \"n\", xlim=c(0,170),xaxp=c(0,170, 10),ylim=c(0,17424),yaxp=c(0,17500,7),ann=F,panel.first=grid())\n"
                 + "title(main=\"Empirical Cumulative Distribution Function\",xlab=\"Max. number of Skipped Exons\",ylab=\"Cumulative number of events\")\n";
 
@@ -75,7 +75,7 @@ public class R_plotter implements Runnable {
                 + "col=c(\"pink\", \"blue\",\"orange\",\"violet\",\"green\",\"red\", \"grey\", \"black\", \"brown\"))\n"
                 + "dev.off()\n";
         //String rCom = "print(\'Hi\');\n";
-        File rScript = new File("C:\\Users\\mahim\\GoBi\\Blatt01\\ExonSkippingJAR\\src\\plots_v2\\R\\myScript.R");
+        File rScript = new File("C:\\Users\\GoBi\\Blatt01\\ExonSkippingJAR\\src\\plots_v2\\R\\myScript.R");
         writeStringToFile(rCom, rScript);
         runRscript(rScript);
         // ---END: Create and execute R-Command---
