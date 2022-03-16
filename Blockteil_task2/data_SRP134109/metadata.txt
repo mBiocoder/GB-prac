@@ -1,0 +1,9 @@
+	condition
+SRR6815098	IgG_control
+SRR6815099	Il1_ab
+SRR6815100	Il1_ab
+SRR6815093	IgG_control
+SRR6815094	IgG_control
+SRR6815095	Il1_ab
+SRR6815096	Il1_ab
+SRR6815097	IgG_control
