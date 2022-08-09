@@ -1,4 +1,4 @@
-# GoBi
+# GB-prac
 
 Task 1: ExonSkipping
 
